@@ -3,7 +3,7 @@ import './index.css'
 import {get} from '../../App/Network/Axios'
 import {debounce} from "../Utils";
 import useRecentLocations from '../Hooks/useRecentLocations';
-
+import _ from 'lodash';
 const Highlighted = ({text = '', highlight = ''}) => {
     if (!highlight.trim()) {
         return <span>{text}</span>
