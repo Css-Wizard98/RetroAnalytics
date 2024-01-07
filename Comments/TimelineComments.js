@@ -1,8 +1,8 @@
 import React, {useRef} from 'react'
 import ReactTimeAgo from "react-time-ago";
 import Moment from "moment";
-import Thumbnail from "retro/Thumbnail/Thumbnail";
-import {Button, Texts} from "retro/index";
+import {Thumbnail} from "../index";
+import {Button, Texts} from "../index";
 
 export default function TimelineComments({comments,name,logs,onComment}) {
 	const COMMENT = useRef()

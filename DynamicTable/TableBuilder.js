@@ -3,7 +3,7 @@ import {Loaders, ScrollableDynamicTable, TableViewSwitch, TOAST as Alert} from "
 import {get} from "../../App/Network/Axios";
 import OpenIcon from "@atlaskit/icon/glyph/open";
 import useQueryHook from "../Hooks/useQueryHook";
-import Filter from "retro/Filter";
+import Filter from "../Filter";
 
 
 function useCardSwitch(type) {

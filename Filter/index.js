@@ -1,13 +1,13 @@
 import React, {useEffect, useId, useState} from 'react'
 import SettingsIcon from "@atlaskit/icon/glyph/settings";
 import Moment from "moment";
-import Modal from "retro/Modal/Modal";
+import Modal from "../Modal/Modal";
 import {DateRangePicker} from "react-date-range";
 import moment from "moment/moment";
 import './index.css'
 import Sort from './sort.svg'
 import FilterIcon from './filter.svg'
-import {Button} from "retro/index";
+import {Button} from "../index";
 import {FormControlLabel, Radio, RadioGroup} from "@material-ui/core";
 
 function Search({onSearch, border = "border-left"}) {
