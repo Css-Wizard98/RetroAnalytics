@@ -1,0 +1,100 @@
+.sidebar-mini{
+    width: 5rem;
+    height: 100vh;
+    max-height: 100%;
+    background-color: var(--theme-surface-color);
+    border-right: 1px solid var(--theme-border-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar-mini .logo{
+    padding: 1rem;
+}
+
+.sidebar-mini .items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    flex-grow: 1;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+
+.sidebar-mini .items::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+.sidebar-mini .items:hover::-webkit-scrollbar-thumb {
+    background-color: var(--theme-outline-color) !important;
+}
+
+.sidebar-mini .items .item{
+    cursor: pointer;
+    width: 2.5rem;
+    height:  2.5rem;
+    background-color: var(--theme-border-color);
+    border-radius: 5rem;
+    display: flex;
+    border: 2px solid #fff;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+.sidebar-mini .item .accordin{
+    width: 24px;
+    position: absolute;
+    left: -38px;
+    border-radius: 8px;
+    height: 30px;
+    background: #111;
+}
+
+.sidebar-mini .items .item:hover{
+    border: 2px solid #222;
+}
+
+.sidebar-mini .profile{
+    padding: 1rem;
+    width: 100%;
+}
+
+
+
+.sidebar-mini .items2 .item{
+    cursor: pointer;
+    width: 3rem;
+    min-width: 3rem;
+    height: 3rem;
+    min-height: 3rem;
+    border-radius: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.5rem;
+    overflow: hidden;
+}
+
+.sidebar-mini .items2 .item-active{
+    cursor: pointer;
+    width: 3rem;
+    min-width: 3rem;
+    height: 3rem;
+    min-height: 3rem;
+    padding: 0.5rem;
+    border-radius: 5rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.5rem;
+    background-color: var(--theme-primary-container);
+}
+
+.sidebar-mini .items2 .item:hover{
+    background-color: var(--theme-border-color);
+}

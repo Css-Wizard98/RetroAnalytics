@@ -1,0 +1,63 @@
+.staircase {
+  display: flex;
+  border-radius: 1rem;
+  margin: auto;
+  width: 100%;
+}
+
+.staircase .track {
+  width: 20px;
+  background-color: var(--theme-variant-color);
+  position: relative;
+  border-radius: 10px;
+}
+
+.staircase .step {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  position: relative;
+  left: -20px;
+  width: calc(100% + 17px);
+}
+
+.staircase .track-point {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 0.5rem 0rem;
+}
+
+.staircase .point {
+  background-color: #111;
+  color: #fff;
+  min-width: 20px;
+  min-height: 20px;
+  width: 20px;
+  height: 20px;
+  border-radius: 30px;
+  border: 1px solid #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.7rem;
+}
+
+@keyframes stretch {
+    0% {
+        transform: scale(.6);
+        border-radius: 100%;
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.staircase .point-text {
+  text-align: left;
+  font-size: 0.8rem;
+  margin-left: 14px;
+  width: 100%;
+}

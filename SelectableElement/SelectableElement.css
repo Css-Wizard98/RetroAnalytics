@@ -1,0 +1,23 @@
+.selectable-wrapper{
+    position: relative;
+    margin: 0.5rem;
+    width: 100%;
+}
+
+.selectable-wrapper.active{
+    position: relative;
+    background-color: var(--theme-primary-container);
+}
+
+.selectable-wrapper .check-box{
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+}
+
+@media (max-width: 576px) {
+    .selectable-wrapper{
+        width: 100%;
+        max-width: 100% !important;
+    }
+}

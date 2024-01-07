@@ -1,0 +1,89 @@
+.text{
+    font: var(--font-small);
+    font-size: var(--size-regular);
+}
+
+.text-light{
+    color:var(--theme-muted-color)
+}
+
+.fw-500{
+    font-weight: 500;
+}
+
+.text-small{
+    font-size: var(--size-small);
+}
+
+.text.pending{
+    color: var(--theme-text-color) !important;
+}
+.text.approved{
+    color: var(--theme-text-color) !important;
+}
+.text.declined{
+    color: var(--theme-error-color) !important;
+}
+.text.cancelled{
+    color: var(--theme-link-color) !important;
+}
+.text.success{
+    color: var(--theme-primary-color) !important;
+}
+.text.completed{
+    color: var(--theme-primary-color) !important;
+}
+
+.text-regular{
+    font-size: var(--size-regular);
+}
+
+.text-medium{
+    font-size: var(--size-medium);
+}
+
+.text-large{
+    font-size: var(--size-large);
+}
+
+.text-xlarge{
+    font-size: var(--size-xlarge);
+}
+
+.fw-400,.regular{
+    font-weight: var(--font-small);
+}
+
+.fw-600,.medium{
+    font-weight: var(--font-medium);
+}
+
+.fw-800,.bold{
+    font-weight: var(--font-bold);
+}
+
+.truncate{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-start{
+    text-align: start;
+}
+
+.text-end{
+    text-align: end;
+}
+
+
+.highlight{
+    background: var(--theme-secondary-container);
+    color: var(--theme-on-secondary-container);
+    padding: 3px 6px;
+    font-size: 10px;
+}

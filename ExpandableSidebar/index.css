@@ -1,0 +1,91 @@
+#retro-expandable-sidebar{
+
+}
+
+.sidepane-button{
+    display: none;
+}
+
+
+#retro-expandable-sidebar .options .option .icon{
+    width: 40px
+}
+
+#retro-expandable-sidebar .options .option{
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    transition: ease-in all 0.1s;
+    white-space: nowrap;
+    margin: 0.5rem 0;
+    font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+    #retro-expandable-sidebar .sidebar-pane{
+        border-right: 1px solid var(--theme-border-color);
+        height: 100vh;
+        overflow-y: auto;
+        padding: var(--size-medium);
+    }
+    #retro-expandable-sidebar .options .option:hover{
+        background-color: var(--theme-border-color);
+    }
+
+    #retro-expandable-sidebar .options .option.active{
+        background-color: var(--theme-border-color);
+        border: 1px solid var(--theme-border-color);
+    }
+
+}
+
+@media (max-width: 768px) {
+    #retro-expandable-sidebar .sidebar-pane{
+        display: none;
+    }
+    #retro-expandable-sidebar .options .option{
+        font-size: 12px;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    #retro-expandable-sidebar.toggled .sidebar-pane{
+        position: fixed;
+        display: block;
+        border: 1px solid var(--theme-border-color);
+        background-color: var(--theme-surface-color);
+        box-shadow: var(--shadow-sm);
+        width: 175px;
+        max-height: calc(100vh - 124px);
+        margin: 100px 12px 12px;
+        border-radius: 12px;
+        bottom: 0;
+        min-height: 100px;
+        padding: var(--size-regular);
+        padding-bottom: 80px;
+        z-index: 111;
+    }
+
+    #retro-expandable-sidebar .sidepane-button{
+        position: fixed;
+        z-index: 112;
+        height: 48px;
+        cursor: pointer;
+        width: 163px;
+        background: var(--theme-primary-container);
+        color: var(--theme-on-primary-container);
+        font-size: 11px;
+        font-weight: 600;
+        overflow: hidden;
+        white-space: nowrap;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 12px;
+        bottom: 18px;
+        left: 18px;
+    }
+}

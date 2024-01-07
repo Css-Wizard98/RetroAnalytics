@@ -1,0 +1,71 @@
+.fmodal-wrapper{
+    position: fixed;
+    z-index: 30;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.4);
+    height: 100%;
+    width: 100%;
+}
+
+.fmodal{
+    background-color: var(--theme-surface-color);
+    border-radius: 0.25rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.fmodal .content{
+    margin: var(--size-medium);
+    flex-grow: 1;
+}
+
+.fmodal .top-bar{
+    display: flex;
+    align-items:flex-start;
+    justify-content: space-between;
+    padding: var(--size-medium);
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+    background-color: var(--theme-surface-color);
+}
+
+.fmodal-wrapper .bottom-bar{
+    padding: var(--size-small);
+}
+
+.fmodal .title{
+    font-size: var(--size-large);
+    font-weight: 600;
+}
+
+.fmodal .description{
+    color: var(--theme-muted-color);
+    font-size: var(--size-regular);
+}
+
+@media (max-width: 576px) {
+    .fmodal{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        max-height: 90%;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        background-color: var(--theme-surface-color);
+        width: 100%;
+        max-width: 100% !important;
+        max-width: 100%;
+        border-radius: 2rem 2rem 0rem 0rem;
+    }
+
+    .fmodal-wrapper .bottom-bar{
+        padding: var(--size-medium);
+        background-color: var(--theme-surface-color);
+        width: 100%;
+    }
+}

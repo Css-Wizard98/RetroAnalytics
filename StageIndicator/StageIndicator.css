@@ -1,0 +1,45 @@
+.stage-indicator{
+    display: flex;
+}
+
+.stage-indicator .stage{
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+}
+
+.stage-indicator .stage .stage-count{
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    background-color: #111111;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+.stage-indicator .stage .stage-count.completed{
+    background-color: var(--theme-success-color) !important;
+}
+
+.stage-indicator .stage .stage-count.active{
+    background-color: #6367FA;
+}
+
+.stage-indicator .stage .stage-label{
+
+}
+.stage-indicator .stage .stage-trail{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stage-indicator .stage .stage-trail div{
+    margin: 0 10px;
+    width: 50px;
+    border-top: 2px dashed var(--theme-border-color);
+}

@@ -1,0 +1,102 @@
+.timeline {
+  display: flex;
+  background: var(--theme-surface-color);
+  border-radius: 1rem;
+  margin: auto;
+  width: 100%;
+}
+
+.timeline .track {
+  width: 5px;
+  background-color: var(--theme-variant-color);
+  position: relative;
+  border-radius: 50px;
+}
+
+.timeline .track-fill {
+  width: 5px;
+  background-color: var(--theme-primary-color);
+  position: relative;
+  left: -5px;
+  border-radius: 50px;
+  transition:  ease-in height 0.3s;
+}
+
+.timeline .stage {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  position: relative;
+  left: -17px;
+  width: calc(100% + 17px);
+}
+
+.timeline .track-point {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.timeline .point {
+  background-color: var(--theme-primary-color);
+  min-width: 20px;
+  min-height: 20px;
+  border-radius: 30px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+}
+
+.timeline .point-pending {
+  background: #ddd;
+  min-width: 20px;
+  min-height: 20px;
+  border-radius: 30px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+}
+
+.timeline .point-active {
+    background: #198754;
+    min-width: 20px;
+    min-height: 20px;
+    border-radius: 30px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    animation-name: stretch;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+@keyframes stretch {
+    0% {
+        transform: scale(.6);
+        border-radius: 100%;
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.timeline .point-text {
+  text-align: left;
+  font-size: 0.8rem;
+  padding: 0.8rem 0rem 0.8rem 0.8rem;
+  border: 1px solid var(--theme-border-color);
+  border-radius: 0.5rem;
+  margin: 1rem 0rem 1rem 1rem;
+  width: 100%;
+}

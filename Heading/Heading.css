@@ -1,0 +1,42 @@
+p,h1,h2,h3,h4,h5,h6,h6,span,button,a{
+    margin: 0;
+    padding: 0;
+}
+
+
+.heading-sm{
+    font-weight: var(--font-bold);
+    font-size: 1.1rem ;
+}
+
+.heading{
+    font-weight: var(--font-bold);
+    font-size: var(--size-medium) ;
+}
+
+.heading-md{
+    font-weight: var(--font-bold);
+    font-size: var(--size-large);
+}
+
+.heading-lg{
+    font-weight: var(--font-bold);
+    font-size: var(--size-xlarge);
+}
+.heading-xlg{
+    font-weight: var(--font-bold);
+    font-size: var(--size-xxlarge);
+}
+
+
+.fw-400,.regular{
+    font-weight: var(--font-small);
+}
+
+.fw-600,.medium{
+    font-weight: var(--font-medium);
+}
+
+.fw-800,.bold{
+    font-weight: var(--font-bold);
+}

@@ -1,0 +1,22 @@
+.searchable .searchable-list {
+    position: absolute;
+    background-color: var(--theme-surface-color);
+    border: 1px solid var(--theme-border-color);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+    margin-top: 5px;
+    z-index: 1;
+    padding: 10px;
+    height: 250px;
+    overflow-y: auto;
+}
+
+.searchable .searchable-list .item {
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.searchable .searchable-list .item:hover {
+    background-color: var(--light-color);
+}

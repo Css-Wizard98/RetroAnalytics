@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Rubik:wght@400;500;600;700;800&display=swap');
+
+@font-face {
+    font-family: iA;
+    font-weight: 900;
+    src: url('https://static.eka.io/fonts/ia/bold.ttf');
+}
+
+@font-face {
+    font-family: iA;
+    font-weight: 400;
+    src: url('https://static.eka.io/fonts/ia/regular.ttf');
+}
+
+@font-face {
+    font-family: iA;
+    font-weight: 500;
+    src: url('https://static.eka.io/fonts/ia/regular.ttf');
+}
+
+@font-face {
+    font-family: iA;
+    font-weight: 600;
+    src: url('https://static.eka.io/fonts/ia/bold.ttf');
+}
+
+
+@font-face {
+    font-family: iA;
+    font-weight: 700;
+    src: url('https://static.eka.io/fonts/ia/bold.ttf');
+}
+
+@font-face {
+    font-family: iA;
+    font-weight: 800;
+    src: url('https://static.eka.io/fonts/ia/bold.ttf');
+}
+
+
+select, input, html, body, p, h1, span, h2, h3, h4 {
+    font-family: var(--font-family);
+}
+
+.yum {
+    font-weight: 600;
+    color: var(--theme-primary-color);
+    cursor: pointer;
+}
+
+.yum2{
+    background: #d2f3b5;
+    color: #222;
+    padding: 4px 8px;
+}
+
+.inline {
+    display: inline;
+}
+
+.pdx {
+    padding: 4px;
+}
+
+
+.text-color {
+    color: var(--theme-text-color) !important;
+}
+
+.primary-color {
+    color: var(--theme-primary-color) !important;
+}

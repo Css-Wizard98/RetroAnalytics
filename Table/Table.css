@@ -1,0 +1,302 @@
+table{
+    width: 100%;
+    font-size: var(--size-regular);
+    border-spacing: 0 0.5rem;
+    table-layout:fixed;
+}
+
+.table-top-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.table-wrapper .heading{
+    padding: 1rem;
+    font-size: var(--size-medium);
+    font-weight: bold;
+}
+
+tr{
+    border-radius: 1rem;
+    transition: ease-out visibility 0.2s;
+}
+
+tr.selected{
+    background-color: var(--theme-primary-container);
+}
+
+th{
+    text-align: start;
+    text-transform: uppercase;
+    height: 5rem;
+    vertical-align: top !important;
+    padding: .75rem .5rem;
+    border-bottom: 2px solid var(--theme-outline-color);
+    color: var(--theme-muted-color);
+}
+
+td{
+    padding: .75rem .5rem;
+    border-right:none;
+}
+
+th:last-child{
+    text-align: end;
+}
+
+.table-wrapper{
+    width: 100%;
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
+}
+
+.table-wrapper .action-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: none;
+    height: 100%;
+    width: 100%;
+    background-color: var(--theme-surface-color);
+}
+
+.table-wrapper .action{
+    padding: 0.75rem 1rem;
+    border-radius: 50px;
+    margin-left: 0.5rem;
+    background-color: var(--theme-primary-container);
+    font-weight: normal;
+    cursor: pointer;
+    text-transform: none;
+    transition: ease all 0.15s;
+}
+
+.table-wrapper .action:hover{
+    background-color: #000;
+    color: var(--theme-surface-color);
+}
+
+.table-top-bar .view-toggle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    border: 1px solid #ddd;
+    overflow: hidden;
+    margin-left: 1rem;
+}
+
+.table-top-bar .view-toggle .icon{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--theme-surface-color);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.table-top-bar .view-toggle .icon-active{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: var(--theme-primary-container);
+}
+
+.table-top-bar .pagination{
+    margin-left: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 50px;
+    border: 1px solid #ddd;
+    overflow: hidden;
+}
+
+.table-top-bar .pagination .handle{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.table-top-bar .pagination .handle:hover{
+    background-color: var(--theme-primary-container);
+}
+
+.table-top-bar .pagination .counter{
+    font-size: 0.8rem;
+    padding: 0 0.5rem;
+    white-space: nowrap;
+}
+
+.tile-view{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.table-top-bar .filters{
+    position: relative;
+}
+
+.table-top-bar .filters .icon{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--theme-surface-color);
+    border-radius: 50px;
+    border: 1px solid var(--theme-border-color);
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+.table-top-bar .filters .icon-active{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    border: 1px solid var(--theme-border-color);
+    cursor: pointer;
+    font-size: 0.8rem;
+    background-color: var(--theme-primary-container);
+
+}
+
+.table-top-bar .filters .icon:hover{
+    background-color: var(--theme-primary-container);
+}
+
+
+@media (min-width:900px) {
+    .scrollable-table  .table-sticky-row-first {
+        position: sticky;
+        left: 0;
+        z-index: 2;
+        top: auto;
+    }
+
+    .scrollable-table .table-sticky-row-second {
+        position: sticky;
+        top: auto;
+    }
+
+}
+
+.scrollable-table td{
+  padding: 1.25rem .75rem;
+}
+
+.scrollable-table th{
+    padding: .75rem;
+    height: 35px;
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-weight: 600;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: var(--theme-border-color);
+    background: #fff;
+}
+
+
+.scrollable-table tr{
+    border-radius: 0;
+    transition: ease-out visibility 0.2s;
+}
+
+.scrollable-table tr td{
+    white-space: break-spaces;
+    --tw-text-opacity: 1;
+    color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+
+.scrollable-table .text-muted{
+    --tw-text-opacity: 1;
+    color: rgb(107 114 128 / var(--tw-text-opacity)) !important;
+}
+
+.scrollable-table tr td:first-child{
+    color: var(--theme-text-color);
+    font-weight: 500 !important;
+}
+
+
+.scrollable-table th:first-child{
+    background: #fff;
+    padding-right: 18px;
+}
+
+.table-sticky-row-first{
+    border-right: 1px solid var(--theme-border-color);
+    padding-right: 18px !important;
+}
+
+.padding-table{
+    padding-right: 24px;
+}
+
+.borderLess2 .padding-table{
+    padding-right: 0;
+}
+
+.borderLess2 .scrollable-table th{
+    border-left: none !important;
+    border-right: none !important;
+    border-top: none !important;
+    padding: 1.5rem 0 !important;
+    font-size: var(--size-small) !important;
+    color: var(--theme-text-color) !important;
+}
+.borderLess2 .scrollable-table tr td{
+    border-left: none !important;
+    border-right: none !important;
+    border-top: none !important;
+    padding: 1rem 0 !important;
+}
+
+button span[aria-label="more"]{
+    transform: rotate(90deg);
+}
+
+
+.borderLess2 tbody tr:hover .table-sticky-row-first {
+    background: var(--theme-variant-color);
+}
+
+
+.borderLess2 tbody tr:hover{
+    background: var(--theme-variant-color) !important;
+    color: var(--theme-on-variant-color);
+}
+
+.borderTable th{
+    font-size: .85rem;
+}
+
+.scrollable-table tr:nth-child(even) {
+    background-color: rgb(249,249,250)
+}
+
+
+.scrollable-table tbody .table-sticky-row-first {
+    background: #ffffff;
+}
+
+.scrollable-table tbody tr:nth-child(even)  .table-sticky-row-first{
+    background-color: rgb(249,249,250)
+}
+

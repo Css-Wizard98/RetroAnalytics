@@ -1,0 +1,114 @@
+
+.chat-wrapper{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    max-height: calc(100vh - 2rem);
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+    background: rgba(0,0,0,0.03);
+    border: 1px solid var(--theme-border-color);
+    border-radius: 1rem;
+}
+
+.chat-wrapper .chats{
+    padding: 1rem;
+    flex: 1;
+    overflow-x: hidden;
+    background: var(--theme-variant-color);
+    overflow-y: auto;
+}
+
+.chat-wrapper .bottom-bar{
+    padding: 1rem;
+    border-top: 1px solid var(--theme-border-color);
+    background-color: var(--theme-surface-color);
+    width: 100%;
+}
+
+.chat-wrapper .message-box{
+    background-color: rgba(0,0,0,0.03);
+    border: 1px solid var(--theme-border-color);
+    border-radius: 0.5rem !important;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 0.3rem;
+}
+
+.chat-wrapper .message-box input{
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.chat-wrapper .message-box .icons{
+    display: flex;
+}
+
+.chat-wrapper .message-box .icons i{
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.chat-wrapper .message-box .icons i:hover{
+    background-color: var(--theme-primary-container);
+}
+
+.chat-wrapper .sent{
+    justify-content: flex-end;
+}
+.chat-wrapper .received{
+    justify-content: flex-start;
+}
+
+.chat-wrapper .received .bubble{
+    display: flex;
+    margin-top: 1rem;
+}
+
+.chat-wrapper .sent .bubble{
+    justify-content: flex-end;
+    align-items: flex-end;
+    display: flex;
+    margin-top: 1rem;
+}
+
+.chat-wrapper .received .bubble .message{
+    border: 1px solid var(--theme-border-color);
+    background-color: var(--theme-surface-color);
+    padding: 0.75rem;
+    font-size: 0.8rem;
+    border-radius: 0rem 1rem 1rem 1rem;
+}
+
+.chat-wrapper .sent .bubble .message{
+    border: 1px solid var(--theme-border-color);
+    background-color: var(--theme-surface-color);
+    padding: 0.75rem;
+    font-size: 0.8rem;
+    border-radius: 1rem 1rem 0rem 1rem;
+}
+
+@media (max-width: 1000px) {
+    .chat-wrapper{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        max-height: 90%;
+        box-shadow: 0rem 0rem 0.6rem rgba(0,0,0,0.2);
+        overflow-x: hidden;
+        overflow-y: scroll;
+        background: #f2f2f2;
+        border: 1px solid var(--theme-border-color);
+        border-radius: 0.5rem;
+        width: 100%;
+        max-width: 100%;
+        border-radius: 2rem 2rem 0rem 0rem;
+    }
+}

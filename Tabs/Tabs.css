@@ -1,0 +1,80 @@
+.tabs-wrapper{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    align-items: center;
+    border-bottom:  1px solid var(--theme-border-color);
+    position: sticky;
+    position:-webkit-sticky;
+    padding-top: 0.5rem;
+    margin-bottom: 1rem;
+    padding-right: 3rem;
+    z-index: 5;
+}
+
+.tabs-wrapper .tab-option{
+    white-space: nowrap;
+    padding: 0.75rem;
+    margin-right: 1rem;
+    cursor: pointer;
+    color: #000;
+    border-bottom: 2px solid var(--theme-bg-container);
+}
+
+.tabs-wrapper .tab-option-active{
+    white-space: nowrap;
+    padding: 0.75rem;
+    margin-right: 1rem;
+    cursor: pointer;
+    color: var(--theme-text-color);
+    font-weight: 600;
+    border-bottom: 2px solid #000;
+}
+
+.tabs-wrapper .tab-option:hover{
+    color: var(--theme-text-color);
+    background: var(--theme-primary-container);
+    border-bottom: 2px solid var(--theme-primary-container);
+}
+
+.stateless-tabs{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    align-items: center;
+    padding-top: 0.5rem;
+    margin-bottom: 1rem;
+    z-index: 5;
+    border-bottom:  1px solid var(--theme-border-color);
+    font-size: 0.9rem;
+}
+
+.stateless-tabs .tab-option{
+    white-space: nowrap;
+    padding: 0.75rem;
+    margin-right: 1rem;
+    transition: ease-out all 0.15s;
+    cursor: pointer;
+    color: #000;
+    border-bottom: 2px solid var(--theme-bg-container);
+}
+
+.stateless-tabs .tab-option-active{
+    white-space: nowrap;
+    padding: 0.75rem;
+    margin-right: 1rem;
+    transition: ease-out all 0.15s;
+    cursor: pointer;
+    color: var(--theme-text-color);
+    font-weight: 600;
+    border-bottom: 2px solid #000;
+}
+
+.stateless-tabs .tab-option:hover{
+    color: var(--theme-text-color);
+    background: var(--theme-primary-container);
+}

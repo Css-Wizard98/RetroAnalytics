@@ -1,0 +1,293 @@
+.btn {
+    border: none;
+    background: none;
+    white-space: nowrap;
+    text-align: center;
+    vertical-align: middle;
+    padding: .7rem 1.4rem;
+    font-size: var(--size-regular);
+    border-radius: 0.25rem;
+    font-weight: var(--font-small);
+    cursor: pointer;
+    transition: ease-in all 0.15s;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+
+.btn:active {
+    transition: ease all 0.2s;
+    background-color: var(--theme-primary-container) !important;
+    color: var(--theme-on-primary-container) !important;
+    transform: scale(102%) !important;
+    cursor: pointer;
+}
+
+.btn.btn-paper{
+    color: #000;
+    padding: .5rem .75rem;
+    font-weight: 500;
+    font-size: 14px;
+    display:  flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+input.no-focus:active,input.no-focus:focus{
+    background: none !important;
+}
+input.no-bg{
+    background: none !important;
+}
+
+.btn.btn-paper:active{
+    background: #fff !important;
+    scale: 1.02;
+}
+
+.btn-padding-less {
+    padding: 0 !important;
+}
+
+.btn-sm {
+    padding: .4rem .8rem;
+    font-size: .87rem;
+}
+
+.btn-ex-sm {
+    padding: .3rem .6rem;
+    font-size: .8rem;
+}
+
+.btn-danger-hover {
+    color: var(--theme-on-variant-color);
+    background: var(--theme-variant-color);
+    border: 2px solid var(--theme-variant-color);
+}
+
+.btn-danger-hover:hover {
+    color: var(--theme-on-error-container);
+    background: var(--theme-error-container);
+    border: 2px solid var(--theme-error-container);
+}
+
+.btn-rg {
+    padding: 1rem 2rem;
+}
+
+.btn-lg {
+    padding: 1rem 3rem;
+}
+
+.btn.btn-primary {
+    color: var(--theme-surface-color);
+    background: var(--theme-primary-color);
+    border: 2px solid var(--theme-primary-color);
+}
+
+.btn.btn-rounded {
+    border-radius: 25px;
+}
+
+.btn.btn-black {
+    color: var(--theme-surface-color);
+    background: var(--theme-text-color);
+    border: 2px solid var(--theme-text-color);
+}
+
+.btn.btn-black:hover {
+    background: var(--theme-primary-color);
+    border: 2px solid var(--theme-primary-color);
+}
+
+.btn.btn-download {
+    color: var(--theme-text-color);
+    background: var(--theme-primary-container);
+    border: 2px solid var(--theme-text-color);
+}
+
+.btn.btn-third {
+    color: var(--theme-on-primary-container);
+    border: 2px solid var(--theme-primary-container);
+    background: var(--theme-primary-container);
+}
+
+.btn.btn-secondary {
+    color: var(--theme-secondary-color);
+    border: 2px solid var(--theme-secondary-color);
+}
+
+.btn.btn-secondary:hover {
+    color: var(--theme-surface-color);
+    border: 2px solid var(--theme-secondary-color);
+    background-color: var(--theme-secondary-color);
+}
+
+.btn.btn-link {
+    color: var(--theme-link-color);
+    padding: 4px;
+    font-weight: 600;
+    display: inline;
+}
+
+.btn.btn-success-secondary {
+    color: var(--theme-success-color);
+    border: 2px solid var(--theme-success-color);
+}
+
+.btn.btn-success-secondary:hover {
+    color: var(--theme-surface-color);
+    border: 2px solid var(--theme-success-color);
+    background-color: var(--theme-success-color);
+}
+
+.btn.btn-success {
+    background-color: var(--theme-success-color);
+    border: 2px solid var(--theme-success-color);
+    color: var(--theme-surface-color);
+}
+
+.btn.btn-danger {
+    color: var(--theme-surface-color);
+    background: var(--theme-error-color);
+    border: 2px solid var(--theme-error-color);
+}
+
+.btn-link-danger {
+    color: var(--theme-error-color) !important;
+}
+
+.btn.btn-danger-secondary {
+    color: var(--theme-error-color);
+    border: 2px solid var(--theme-error-color);
+}
+
+.btn.btn-danger-secondary:hover {
+    color: var(--theme-surface-color);
+    background: var(--theme-error-color);
+}
+
+
+.approve-btn {
+    background-color: #E4EFE7 !important;
+    color: #198754 !important;
+    border-color: #E4EFE7 !important;
+    transition: ease all 0.15s;
+}
+
+.approve-btn:hover {
+    background-color: var(--theme-primary-color) !important;
+    color: var(--theme-on-primary-color) !important;
+    border-color: var(--theme-primary-color) !important;
+}
+
+.decline-btn {
+    background-color: var(--theme-error-container) !important;
+    color: var(--theme-error-color) !important;
+    border-color: var(--theme-error-container) !important;
+    transition: ease all 0.15s;
+}
+
+.decline-btn:hover {
+    background-color: var(--theme-error-color) !important;
+    color: var(--theme-surface-color) !important;
+    border-color: var(--theme-error-color) !important;
+}
+
+.btn.btn-inactive {
+    color: var(--theme-text-color);
+    background: var(--theme-variant-color);
+    border: 2px solid var(--theme-variant-color);
+}
+
+.btn-max {
+    width: 100%;
+    display: block;
+}
+
+
+.spinner {
+    width: 60px;
+    text-align: center;
+}
+
+.spinner > div {
+    width: 8px;
+    height: 8px;
+    margin: 0 2px;
+    background-color: var(--theme-surface-color);
+    border-radius: 100%;
+    display: inline-block;
+    -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+    animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.spinner .bounce1 {
+    -webkit-animation-delay: -0.32s;
+    animation-delay: -0.32s;
+}
+
+.spinner .bounce2 {
+    -webkit-animation-delay: -0.16s;
+    animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+    0%, 80%, 100% {
+        -webkit-transform: scale(0)
+    }
+    40% {
+        -webkit-transform: scale(1.0)
+    }
+}
+
+@keyframes sk-bouncedelay {
+    0%, 80%, 100% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    40% {
+        -webkit-transform: scale(1.0);
+        transform: scale(1.0);
+    }
+}
+
+.back-btn {
+    cursor: pointer;
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: 2.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: ease-in all 0.2s;
+    border: 1px solid var(--theme-border-color);
+}
+
+.back-btn:hover {
+    background-color: #222;
+    color: #fff;
+}
+
+.btn.btn-sm span[role="presentation"]{
+    width: 12px !important;
+    height: 12px !important;
+}
+
+textarea{
+    resize: none;
+}
+
+.comments-area textarea
+{
+    resize: none;
+    border: 1.25px solid #dedede;
+    border-radius: 8px;
+    padding: 12px 12px 60px;
+}
+
+.comments-area textarea:focus{
+    border: 1.25px solid #6367FA;
+}

@@ -1,0 +1,17 @@
+.indicator-dot{
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+}
+
+.high{
+    background-color: red;
+}
+
+.mid{
+    background-color: orange;
+}
+
+.low{
+    background-color: green;
+}

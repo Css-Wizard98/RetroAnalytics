@@ -1,0 +1,178 @@
+.search-input {
+    width: 100%;
+    transition: ease-in-out all 0.1s;
+    background-color: var(--theme-surface-color, #f7f7fa);
+}
+
+
+.search-result {
+    position: absolute;
+    top: calc(100% - 5px);
+    left: 0px;
+    border-radius: 0 0 0.5rem 0.5rem;
+    padding: 0.5rem;
+    width: calc(100%);
+    border: 1px solid var(--theme-outline-color);
+    border-top: none;
+    z-index: 1;
+    max-height: 360px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: var(--theme-surface-color);
+    box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.search-result .item {
+    padding: 0.75rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    border-radius: 0.25rem;
+    transition: ease-in-out all 0.1s;
+}
+
+.search-result .header {
+    padding: 0.5rem;
+    padding-top: 0;
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+    background-color: var(--theme-surface-color);
+    border-bottom: 1px solid var(--theme-border-color);
+}
+
+.search-result .item:hover {
+    background-color: var(--theme-primary-container);
+}
+
+.text-input-label {
+    font-size: 0.8rem;
+    color: var(--theme-on-variant-color);
+}
+
+
+.search-input-mock {
+    border: 1px solid var(--theme-outline-color, #f2f2f2);
+    background-color: var(--theme-surface-color);
+    padding: 1rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+
+#search-area input {
+    background: none !important;
+    border: none !important;
+}
+
+#search-area input:focus {
+    background: none !important;
+    border: none !important;
+}
+
+#search-area .scroll-container {
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scrollbar-width: none; /* Firefox */
+}
+
+#search-area .scroll-container::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+}
+
+.hitZak-loader {
+    width: 100%;
+    height: 4.8px;
+    display: inline-block;
+    position: relative;
+    background: rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+}
+
+.hitZak-loader2 {
+    width: 100%;
+    height: 2px;
+    position: relative;
+    background: rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+}
+
+.hitZak-loader2::after {
+    content: '';
+    width: 96px;
+    height: 2px;
+    background: var(--theme-primary-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    animation: hitZak 1s linear infinite alternate;
+}
+
+.hitZak-loader::after {
+    content: '';
+    width: 96px;
+    height: 4.8px;
+    background: var(--theme-primary-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    animation: hitZak 1s linear infinite alternate;
+}
+
+@keyframes hitZak {
+    0% {
+        left: 0;
+        transform: translateX(-1%);
+    }
+    100% {
+        left: 100%;
+        transform: translateX(-99%);
+    }
+}
+
+.transition-opacity {
+    transition-property: opacity;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition-duration: .15s;
+}
+
+.backdrop-blur {
+    --tw-backdrop-blur: blur(8px);
+     backdrop-filter: var(--tw-backdrop-blur);
+}
+.fixed-11{
+    position: fixed;
+    z-index: 111;
+}
+
+.inset-0 {
+    inset: 0;
+}
+
+.bg-blur{
+    background: rgba(0,0,0,.275);
+}
+
+.transition-all {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition-duration: .15s;
+}
+.headless{
+    background: white;
+    overflow: hidden;
+    opacity: 1 !important;
+}
+.headless input{
+    border: none !important;
+    padding: 1rem !important;
+    font-weight: 500;
+    background: transparent !important;
+}
+
+.headless .item{
+    padding: 16px 18px;
+    font-size: 16px;
+    border-top: 1px solid #dedede;
+    cursor: pointer;
+}

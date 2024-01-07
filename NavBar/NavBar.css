@@ -1,0 +1,7 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--theme-border-color);
+    padding: 1rem 3rem;
+}

@@ -1,0 +1,30 @@
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown .dropdown-list {
+    display: none;
+    right: 0;
+    top:-48%;
+    position: absolute ;
+    background-color: var(--theme-surface-color);
+    border-radius: 0.5rem;
+    min-width: 100px;
+    box-shadow: 0rem 0.2rem 0.5rem 0rem rgba(0,0,0,0.1);
+    padding: 0.5rem;
+    z-index: 10;
+  }
+
+  .dropdown:hover .dropdown-list {
+    display: flex;
+  }
+
+  .dropdown .dropdown-list .option{
+    padding: 0.75rem;
+    border-radius: 0.25rem;
+  }
+
+  .dropdown .dropdown-list .option:hover{
+    background-color: var(--theme-primary-container)
+  }

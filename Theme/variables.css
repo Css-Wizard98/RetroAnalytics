@@ -1,0 +1,74 @@
+body{
+    --size-xsmall:.5rem;
+    --size-small:.8rem;
+    --size-regular:1rem;
+    --size-medium:1.6rem;
+    --size-large:2rem;
+    --size-xlarge:3rem;
+    --size-xxlarge:4rem;
+    --size-xxxlarge:5rem;
+    --font-small:400;
+    --font-medium:600;
+    --font-bold:600;
+    --shadow-ex:rgba(0, 0, 0, 0.075) 0px 1px 2px;
+    --shadow-sm:rgba(0, 0, 0, 0.15) 0px 1px 4px;
+    --shadow-rg:rgba(0, 0, 0, 0.1) 0px 3px 6px;
+    --shadow-md:rgba(0, 0, 0, 0.1) 0px 4px 8px;
+    --shadow-lg:rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    --weight:1;
+    --weight-one : 5;
+    --weight-two: 7;
+    --weight-three: 11;
+    --weight-four : 14;
+    --weight-five : 21;
+    --font-family :'proxima-nova',"Inter","Segoe UI",'Roboto', sans-serif;
+    /*light.props.surface*/
+    --theme-bg-container:#FFFCF3;
+    --theme-surface-color:#FFFFFF;
+    /*light.props.primary*/
+    --theme-primary-color: #11b078;
+    --theme-on-primary-color:#fff;
+    /*light.props.primaryContainer*/
+    --theme-primary-container:#ebe5ff;
+    --theme-on-primary-container:#333333;
+    /*light.props.secondary*/
+    --theme-secondary-color:#444557 ;
+    --theme-on-secondary-color:#fff;
+    /*light.props.secondaryContainer*/
+    --theme-secondary-container:#f8f9fa;
+    --theme-variant-color:#fff;
+    --theme-on-variant-color:#333;
+    --theme-outline-color:#111;
+    --theme-on-secondary-container:#333333;
+
+    /*light.props.tertiary*/
+    --theme-link-color: #444557 ;
+    --theme-link-container:#ffffff;
+    --theme-on-link-container:#222222;
+
+    /*light.props.onSurfaceVariant*/
+    --theme-muted-color:#05001a ;
+    /*light.props.onSurface*/
+    --theme-text-color:#05001a ;
+    /*light.props.tertiaryContainer*/
+    --theme-hover-color:#c2b3ff;
+    /*light.props.error*/
+    --theme-error-color: #df4a67;
+    --theme-error-container:#FAD4D4;
+    --theme-on-error-container:#222222;
+    /*Constant*/
+    --theme-border-color:#eaeaea;
+    --theme-success-color: #198754;
+    --theme-success-container:#E4EFE7;
+    --theme-warning-color:#FFE088;
+    color: var(--theme-text-color);
+    width: 100vw;
+    overflow: hidden;
+    line-height: 1.42857;
+    letter-spacing: -.075px;
+    margin: 0;
+    padding: 0;
+    font-weight: var(--font-small);
+    font-family: var(--font-family);
+    height: 100% !important;
+}

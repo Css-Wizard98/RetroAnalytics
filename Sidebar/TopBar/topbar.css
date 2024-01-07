@@ -1,0 +1,21 @@
+#topBar-wrapper .topBar{
+    background: var(--theme-surface-color);
+}
+
+.topBar-logo{
+    max-height: 45px;
+    max-width: 100px;
+}
+
+#topBar-wrapper .navigator-web{
+    padding-top: 1.5rem;
+}
+
+.topBar-title{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.topBar-title.active{
+    color: var(--theme-primary-color);
+}

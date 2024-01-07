@@ -1,0 +1,41 @@
+.filters-wrapper{
+    position: relative;
+}
+
+.filters-wrapper .filter-popup{
+    display: none;
+    box-shadow: 0rem 0.2rem 0.5rem rgba(0,0,0,0.08);
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    background-color: var(--theme-surface-color);
+    padding: var(--size-medium);
+    border-radius: 0.4rem;
+    border: 1px solid var(--theme-variant-color);
+    width: 500px;
+    max-width: 90vw;
+}
+
+.filters-wrapper:hover .filter-popup{
+    display: block;
+}
+
+@media (max-width: 576px) {
+    .filters-wrapper{
+        position: initial;
+    }
+
+    .filters-wrapper .filter-popup{
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: auto;
+        bottom: 0;
+        max-width: 100%;
+        width: 100%;
+        z-index: 50;
+        border-radius: 20px 20px 0px 0px;
+        box-shadow: 0rem 0rem 0.8rem rgba(0,0,0,0.15);
+    }
+}

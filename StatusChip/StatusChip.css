@@ -1,0 +1,118 @@
+.status-chip{
+    font-weight: bold;
+    padding: 0.35rem 0.7rem;
+    border-radius: 5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.6rem;
+    max-width: 140px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.success{
+    background-color: rgb(240 253 244);;
+    color: rgb(21 128 61);
+    border: 1px solid rgb(22 163 74 / 0.2);
+}
+
+.success-text{
+    color: rgb(21 128 61);
+    font-size: 14px;
+}
+
+.failed{
+    background-color: rgb(253 232 232);;
+    color: rgb(155 28 28);
+    border: 1px solid rgb(155 28 28 / 0.2);
+}
+
+.failed-text{
+    color: rgb(155 28 28);
+    font-size: 14px;
+}
+
+.status-chip.preview{
+    background-color: rgb(243 244 246);;
+    color: rgb(31 41 55);
+    border: 1px solid rgb(31 41 55 / 0.2);
+}
+
+.preview-text{
+    color: rgb(31 41 55);
+    font-size: 14px;
+}
+
+.linear{
+    font-size: 12px;
+}
+
+.chip-circle {
+    width: 6px;
+    height: 6px;
+    border-radius: 6px;
+    margin-right: 6px;
+}
+
+.chip-circle.success {
+    background-color: #13A180;
+}
+.chip-circle.approval {
+    background-color: #6367FA;
+}
+.chip-circle.pending {
+    background-color: #0D67CA;
+}
+
+.chip-circle.failed {
+    background-color: #E3463B;
+}
+
+.chip-circle.cancelled {
+    background-color:rgb(85 33 181);
+}
+
+.chip-circle.failed {
+    background-color: #E3463B;
+}
+
+
+.pending{
+    background-color: rgb(229 237 255);;
+    color: rgb(66 56 157);
+    border: 1px solid rgb(66 56 157 / 0.2);
+}
+
+.approval{
+    background-color: rgba(230, 201, 181,.175);;
+    color: rgb(216, 126, 30);
+    border: 1px solid rgb(199, 115, 29);
+}
+
+.pending-text{
+    color: rgb(66 56 157);
+    font-size: 14px;
+}
+
+.cancelled{
+    background-color: rgb(237 235 254);;
+    color: rgb(85 33 181);
+    border: 1px solid rgb(85 33 181 / 0.2);
+}
+.cancelled-text{
+    color: rgb(85 33 181);
+    font-size: 14px;
+}
+
+.success{
+    background-color: rgb(240 253 244);;
+    color: rgb(21 128 61);
+    border: 1px solid rgb(22 163 74 / 0.2);
+}
+
+.disabled{
+    background-color: var(--theme-border-color);
+}
