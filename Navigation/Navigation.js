@@ -54,7 +54,7 @@ function Navigation({title,tags=[],  backUrl,children,top, style, container='wra
                     }
                     <div className="relative w-100">
                         <div className='title text-truncate'>
-                            {title}
+                            <h2>{title}</h2>
                         </div>
                         {
                             tags.length>0 && <div style={{

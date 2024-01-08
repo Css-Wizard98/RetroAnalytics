@@ -33,7 +33,7 @@ function StatusChip({status, className, style, linear = false}) {
 
 
 	return <div data-tooltip-content={status} data-tooltip-id="wrapper" style={style}
-				className={`status-chip text-truncate pointer ${flag} ${className}`}>{status}</div>;
+				className={`status-chip text-truncate pointer ${flag} ${className}`}>{status== 'failed' ? 'SELL':'BUY'}</div>;
 }
 
 export default StatusChip;

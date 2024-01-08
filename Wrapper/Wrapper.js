@@ -2,7 +2,7 @@ import React, {useEffect, useRef} from 'react'
 import './index.css'
 import Props from 'prop-types'
 import {useLocation} from "react-router-dom";
-import useWrapperHook from '../Hooks/useWrapperHook';
+// import useWrapperHook from '../Hooks/useWrapperHook';
 
 /**
  *@author [Lakshay Jain](https://github.com/lakshay-dice)
@@ -10,7 +10,7 @@ import useWrapperHook from '../Hooks/useWrapperHook';
 
 function Wrapper({style={},children,className="",id="wrapper"}){
 
-	const type = useWrapperHook();
+	// const type = useWrapperHook();
 	const { pathname } = useLocation();
 	let WRAPPER = useRef()
 
@@ -20,21 +20,21 @@ function Wrapper({style={},children,className="",id="wrapper"}){
 	  }
 	}, [pathname]);
 
-	if(type==="top"){
-		return (
-			<div ref={WRAPPER} id={id} className={`w-100 flex-fill ${className}`} style={{overflowY:'scroll', overflowX:'hidden',...style}}>
-				<div style={{paddingBottom:48}}>
-					{children}
-				</div>
-			</div>
-		)
-	}else{
+	// if(false){
+	// 	return (
+	// 		<div ref={WRAPPER} id={id} className={`w-100 flex-fill ${className}`} style={{overflowY:'scroll', overflowX:'hidden',...style}}>
+	// 			<div style={{paddingBottom:48}}>
+	// 				{children}
+	// 			</div>
+	// 		</div>
+	// 	)
+	// }else{
 		return (
 			<div ref={WRAPPER} id={id} className={`w-100 h-100h ${className}`} style={{overflowY:'scroll', overflowX:'hidden',...style}}>
 				{children}
 			</div>
 		)
-	}
+	// }
 }
 
 Wrapper.propTypes = {

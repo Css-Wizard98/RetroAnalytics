@@ -8,19 +8,19 @@ export default function SidebarRenderer({children, topItems= [],dropDown=[], fle
 	email:"Loading...",
 	children:(<></>),
 }}){
-	const TYPE = useWrapperHook();
+	// const TYPE = useWrapperHook();
 
 	if(window.location !== window.parent.location){
 		return <></>
 	}
 
 
-	if(flexible){
-		if(!TYPE){
-			return <></>
-		}else if(TYPE === "top"){
-			return (<TopBar children={children} items={topItems} dropDown={dropDown} logo={logo} data={data}/>)
-		}
-	}
+	// if(flexible){
+	// 	if(!TYPE){
+	// 		return <></>
+	// 	}else if(TYPE === "top"){
+	// 		return (<TopBar children={children} items={topItems} dropDown={dropDown} logo={logo} data={data}/>)
+	// 	}
+	// }
 	return(<Sidebar children={children} items={items} logo={logo} data={data}/>)
 }
